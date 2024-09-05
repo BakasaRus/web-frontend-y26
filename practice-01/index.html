@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Example</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <section id="app" class="section">
+        <div class="container">
+          <h1 class="title">
+            {{ message }}
+          </h1>
+          <p class="subtitle">
+            My first website with <strong>Bulma</strong>!
+          </p>
+          <div class="control">
+            <input class="input is-focused" type="text" placeholder="Focused input" v-model="message">
+          </div>
+          <button class="button" @click="count++">{{ count }}</button>
+        </div>
+    </section>
+
+    <script>
+    const { createApp, ref } = Vue
+
+    createApp({
+        setup() {
+            const message = ref('Hello vue!');
+            let count = ref(0);
+            return {
+                count,
+                message,
+            }
+        }
+    }).mount('#app');
+    </script>
+</body>
+</html>
