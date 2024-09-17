@@ -1,0 +1,64 @@
+body {
+    font-family: Lobster, sans-serif;
+    font-size: 14px;
+}
+
+.highlighted {
+    font-family: "Press Start 2P", system-ui;
+}
+
+h1 {
+    color: green !important;
+    background-color: aqua;
+    font-size: 5em;
+}
+
+nav {
+    width: 200px;
+}
+
+h1 {
+    color: red;
+}
+
+a:hover {
+    color: darkred;
+}
+
+input:disabled {
+    background-color: green;
+}
+
+ul > li:nth-child(odd) {
+    background-color: yellow;
+}
+
+ul ::marker {
+    content: 'HELLO!';
+}
+
+section > h2::before {
+    content: '«';
+}
+
+section > h2::after {
+    content: '»';
+}
+
+html {
+    font-size: 24px;
+}
+
+ul.rem-list {
+    font-size: 24px;
+}
+
+li.rem-item {
+    font-size: 1.5rem;
+}
+
+#vhvw {
+    width: 50vw;
+    height: 25vh;
+    background-color: blueviolet;
+}

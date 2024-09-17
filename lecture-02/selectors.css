@@ -1,0 +1,41 @@
+h1, h3 {
+    /* font-size: 128px; */
+    color: red;
+    background-color: blue;
+    text-decoration: underline;
+}
+
+h2 {
+    color: green;
+    background-color: darkred;
+}
+
+/* p {
+    color: #FFAADDFF;
+    background-color: rgb(147, 239, 15);
+} */
+
+.highlighted {
+    color: white;
+    background-color: darkmagenta;
+}
+
+.highlighted > div {
+    background-color: beige;
+}
+
+#heading-one + p {
+    color: greenyellow;
+}
+
+[controls] {
+    background-color: blueviolet;
+}
+
+[href="#"] {
+    background-color: violet;
+}
+
+[src$=".png"] {
+    height: 500px;
+}
