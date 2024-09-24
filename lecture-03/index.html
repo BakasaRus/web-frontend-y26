@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Document Flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Главная</li>
+                <li>Ещё одна страница</li>
+                <li>О нас</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Блочная модель и поток документа</h1>
+        <section class="highlight">
+            <h2>Таблички =)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ISU ID</th>
+                        <th>ФИО</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>184321</td>
+                        <td>Макаревич Роман Дмитриевич</td>
+                    </tr>
+                    <tr>
+                        <td>224857</td>
+                        <td>Андреев Николай Владимирович</td>
+                    </tr>
+                    <tr>
+                        <td>242445</td>
+                        <td>Григорьев Герман Сергеевич</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Сетка на обтеканиях</h2>
+            <div class="float-rows">
+                <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Quaerat, ipsam minus. Nihil voluptatum modi sapiente corrupti tempore, sequi non voluptas nostrum autem vero optio eligendi? Architecto quaerat nihil esse incidunt sint temporibus rem culpa in voluptatibus? Facere dolore mollitia eaque nesciunt impedit deleniti assumenda itaque sint porro, perspiciatis optio alias consequatur pariatur quibusdam! Illo iste sit unde at dignissimos excepturi nemo perspiciatis soluta rerum doloribus corrupti voluptatum sequi a, neque distinctio sapiente dicta fugit, nobis eveniet quas? Omnis illum distinctio, repudiandae eum explicabo quae, placeat qui ab delectus voluptatibus quam minus vero recusandae mollitia ipsum, a nam dolores? Repellendus, suscipit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ex ipsa, nam exercitationem voluptatibus incidunt qui culpa! Eius, sint veritatis ducimus possimus voluptas inventore obcaecati ipsum est consectetur dolores voluptate unde perferendis nihil repudiandae velit, nostrum autem atque dignissimos temporibus. Id consequatur natus nam earum sequi voluptas maiores fugiat debitis sed officia, deleniti minus iusto quasi perferendis, harum laudantium dolor nisi quidem molestiae, modi autem labore? Architecto debitis aliquid animi.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At odit nulla impedit laboriosam cum sint laudantium consectetur dolor aliquam provident nemo id eligendi illum saepe voluptatem minima, fugiat quas enim? Pariatur veniam magni in sunt. Voluptates quisquam nam repellat commodi consequatur non quos. Hic cupiditate itaque totam sed non exercitationem veniam, ipsa, reprehenderit et, iure similique commodi. Saepe nisi a hic facilis, rem neque quisquam harum inventore natus rerum! Voluptatibus similique officia optio exercitationem odio vitae atque esse rem possimus aliquid consequuntur sapiente reprehenderit, consequatur et quidem ducimus saepe accusamus nostrum commodi, numquam delectus cumque explicabo? Eius, nesciunt atque. Iusto dicta cumque corrupti, aspernatur, nulla sapiente itaque quis explicabo inventore maxime, sit aliquid ex velit tempore temporibus. Earum, ipsum eligendi?</p>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <section>
+            <h2>Сетка на <code>inline-block</code></h2>
+            <div class="inline-rows">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente voluptate sit non aspernatur vitae accusantium, maxime tenetur obcaecati enim quibusdam itaque dolorem asperiores repellat alias, unde ea, eos laborum nihil ab magni laboriosam. Dolorum dignissimos quisquam rem corrupti repudiandae, deserunt adipisci vitae corporis suscipit. Odio adipisci ea tenetur expedita quod maxime quasi minima quo consequuntur aliquam, porro eius rerum cum rem? Tenetur alias aliquam ratione illo minima molestias, eveniet quisquam sapiente aliquid est voluptate facilis, libero deleniti saepe nisi nihil officia. Sit id ipsa commodi rem est deleniti nobis necessitatibus, facere quod labore. Recusandae quos ab illo laborum eius!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit cupiditate autem distinctio necessitatibus eligendi sapiente odio labore, in sit! Deserunt blanditiis eaque in ratione quis! Dolorem voluptas, perspiciatis minus possimus sit ad. Reprehenderit commodi illo, inventore alias officia temporibus id est quo provident ullam aliquam quibusdam dolore delectus similique laborum sapiente cumque totam aut perferendis qui perspiciatis. Inventore molestiae odit ratione dolor reiciendis molestias nulla minima, laudantium aut doloribus quasi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus nihil assumenda alias asperiores. Consequuntur quidem labore magni officiis laborum odit cupiditate magnam pariatur nemo saepe blanditiis ad expedita perferendis, deserunt impedit excepturi consectetur eos et amet itaque praesentium modi incidunt quis voluptatibus? Quod harum illo ad quas optio non aliquid, vel impedit. Sunt molestiae excepturi aut? Quasi cumque aliquam accusamus, exercitationem laboriosam optio voluptate illo quo dolorum distinctio, tenetur est, impedit tempora ipsam praesentium atque expedita nobis necessitatibus? Omnis molestias vel repellat rerum ducimus nisi officia porro eaque a aliquid dignissimos unde eos suscipit inventore voluptatem reiciendis, iure rem quidem quia exercitationem impedit aliquam facilis. Quos, porro. Odit labore et facere id, ad laudantium explicabo! Cum nulla sunt dignissimos!</p>    
+            </div>
+        </section>
+        <aside>
+            <img class="img-block img-right" src="https://faq.itmo.is/assets/images/cover-3bc55022f447b2f435a95aeef968deed.jpg" alt="Уважаемый коллега">
+            <p class="img-block img-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nesciunt nulla impedit tenetur id voluptatum error, laboriosam repellat laborum odit ratione, possimus ex ut maiores explicabo hic voluptatem! Suscipit hic illo nesciunt quis ullam nihil, doloremque voluptate voluptatum odio? Quod et illum dolor tempora, dolorum suscipit dignissimos eligendi, sint eveniet doloribus accusantium exercitationem a sunt necessitatibus dolores rerum beatae. Similique veniam quasi qui minus nostrum magni culpa optio, rerum deleniti praesentium eos quibusdam sunt! Voluptatem inventore neque reprehenderit ipsum? Aspernatur reiciendis reprehenderit laudantium obcaecati distinctio repellendus cumque aliquid amet explicabo dolor, fugiat eligendi, veritatis quisquam hic assumenda numquam quaerat exercitationem.</p>
+            <img class="img-block img-right" src="https://faq.itmo.is/assets/images/cover-3bc55022f447b2f435a95aeef968deed.jpg" alt="Уважаемый коллега">
+            <div class="clearfix"></div>
+        </aside>
+    </main>
+    <footer>
+        <ul>
+            <li>&copy; 2024. Все права защищены</li>
+            <li><a href="mailto:nvandreev@itmo.ru" target="_blank">nvandreev@itmo.ru</a></li>
+            <li><a tel="+78005553535">+7 (800) 555-35-35</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

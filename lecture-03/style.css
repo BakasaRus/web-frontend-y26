@@ -1,0 +1,94 @@
+p.half-width {
+    width: 50%;
+
+    /* Относительное позиционирование */
+    /* position: relative; */
+
+    /* Абсолютное позиционирование от границы документа */
+    /* position: absolute; */
+
+    /* Фиксированное позиционирование от границы окна */
+    /* position: fixed; */
+    top: 50px;
+    left: 50px;
+}
+
+p {
+    /* display: inline; */
+}
+
+section {
+    border: 2px solid red;
+}
+
+section {
+    /* margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 25px; */
+
+    /* margin: 20px 25px 50px 15px; */
+    /* margin: 20px 50px; */
+    margin: 20px 50px 30px;
+    padding: 15px;
+    /* width: 100%; */
+    box-sizing: border-box;
+    /* height: 100%; */
+
+    /* Позиционирование здорового человека */
+    position: static;
+}
+
+section > h2 {
+    position: sticky;
+    top: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+.img-block {
+    width: 300px;
+    display: block;
+    padding: 10px;
+}
+
+.img-right {
+    float: left;
+}
+
+aside {
+    /* display: none; */
+}
+
+main {
+    border: 2px solid green;
+    display: contents;
+}
+
+header {
+    background-color: bisque;
+    border: 2px blue solid;
+
+    position: sticky;
+    top: 10px;
+
+    z-index: -1;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.float-rows > p {
+    width: calc(33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.inline-rows > p {
+    display: inline-block;
+    width: calc(32% - 20px);
+    padding: 0 10px;
+}
