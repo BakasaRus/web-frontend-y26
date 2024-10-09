@@ -1,0 +1,82 @@
+:root {
+    --header-color: red;
+    --body-bg: antiquewhite;
+    --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --header-color: pink;
+        --body-bg: black;
+        --text-color: white;
+    }
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+main > section {
+    float: left;
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media screen and (min-width: 700px) {
+    h2 {
+        color: var(--header-color);
+    }
+}
+
+@media print {
+    h2 {
+        text-decoration: underline;
+    }
+}
+
+.display-xl, .display-lg, .display-md, .display-sm {
+    display: none;
+}
+
+@media screen and (min-width: 1201px) {
+    .display-xl {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main > section {
+        width: calc(33% - 20px);
+    }
+}
+
+@media screen and (800px < width <= 1200px) {
+    .display-lg {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main > section {
+        width: calc(50% - 20px);
+    }
+
+    .display-md {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main > section {
+        width: calc(100% - 20px);
+    }
+
+    .display-sm {
+        display: block;
+    }
+}
