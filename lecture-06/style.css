@@ -1,0 +1,20 @@
+main {
+  background-color: antiquewhite;
+  display: grid; }
+  main .btn, main > section > button {
+    padding: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px; }
+  main > section {
+    padding: 16px;
+    border: 1px solid #CCCCCC; }
+    main > section > button.success {
+      background-color: green; }
+    main > section > button.error {
+      background-color: red; }
+    main > section > h2 {
+      text-decoration: underline;
+      font-weight: 900; }
+
+/*# sourceMappingURL=style.css.map */

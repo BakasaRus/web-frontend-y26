@@ -1,0 +1,31 @@
+main {
+    background-color: antiquewhite;
+    display: grid;
+
+    .btn {
+        padding: 8px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 8px;
+    }
+
+    & > section {
+        padding: 16px;
+        border: 1px solid #CCCCCC;
+
+        & > button {
+            @extend .btn;
+            &.success {
+                background-color: green;
+            }
+            &.error {
+                background-color: red;
+            }
+        }
+
+        & > h2 {
+            text-decoration: underline;
+            font-weight: 900;
+        }
+    }
+}
