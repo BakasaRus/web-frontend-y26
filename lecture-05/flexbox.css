@@ -1,0 +1,52 @@
+header, footer, section {
+    border: 1px black solid;
+}
+
+header, footer {
+    height: 200px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+}
+
+section {
+    flex-basis: 500px;
+    /* flex-grow: 1; */
+}
+
+section:nth-child(even) {
+    flex-shrink: 1;
+}
+
+nav, nav > ul {
+    height: 100%;
+}
+
+li.flex-start {
+    align-self: start;
+}
+
+section.first {
+    order: -1;
+}
+
+nav > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav > ul > li {
+    display: block;
+}
+
+footer {
+    display: flex;
+}
+

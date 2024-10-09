@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-areas: 
+        "h h"
+        "n m"
+        "n f";
+}
+
+body > * {
+    border: 1px black solid;
+}
+
+body > nav {
+    grid-area: n;
+}
+
+body > header {
+    grid-area: h;
+}
+
+body > footer {
+    grid-area: f;
+}
+
+body > main {
+    grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 200px 150px;
+    gap: 10px;
+    padding: 10px;
+}
+
+main > h2 {
+    grid-column: 1 / -1;
+    grid-row: 2 / 4;
+}
+
+main > section {
+    /* border: 1px red solid; */
+    box-shadow: 2px 2px 10px 0px black;
+    padding: 10px;
+}
