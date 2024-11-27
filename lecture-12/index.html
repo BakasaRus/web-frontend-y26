@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storages Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="indexeddb.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Weight</th>
+                <th>Height</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <form id="addForm">
+        <div>
+            <label for="id">ID</label>
+            <input type="text" id="id">
+        </div>
+        <div>
+            <label for="pname">Name</label>
+            <input type="text" id="pname">
+        </div>
+        <div>
+            <label for="weight">Weight</label>
+            <input type="text" id="weight">
+        </div>
+        <div>
+            <label for="height">Height</label>
+            <input type="text" id="height">
+        </div>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
