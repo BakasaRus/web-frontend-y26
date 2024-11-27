@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components</title>
+    <script src="alert-button.js"></script>
+    <script src="info-card.js" defer></script>
+</head>
+<body>
+    <div>
+        <button is="alert-button" message="Hello!">Click here</button>
+        <button is="alert-button" message="Hi!">Click here</button>    
+    </div>
+    <div>
+        <input type="color">
+        <input type="date">
+    </div>
+    <info-card title="Hello!">
+        <span slot="author">Nikolai Andreev</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolores.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet commodi officia, delectus possimus suscipit harum corrupti dolor voluptatem neque.</p>
+    </info-card>
+    <info-card title="Another card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet commodi officia, delectus possimus suscipit harum corrupti dolor voluptatem neque.</p>
+    </info-card>
+    <template id="card-template">
+        <article>
+            <h2></h2>
+            <p><strong>
+                <slot name="author">Abobus</slot>
+            </strong></p>
+            <slot></slot>
+        </article>
+    </template>
+</body>
+</html>
